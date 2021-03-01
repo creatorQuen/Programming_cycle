@@ -84,6 +84,25 @@ namespace Programming_cycle
                 }
 
             }
+            else if(task == 4)
+            {
+                /// <summary>
+                /// Пользователь вводит 1 число (A). Вывести наибольший делитель (кроме самого A) числа A.
+                /// </summary>
+
+                int A4;
+                Console.Write("Введите число A: ");
+                A4 = Convert.ToInt32(Console.ReadLine());
+
+                for (int i = A4 - 1; i >=1 ; i--)
+                {
+                   if( A4 % i == 0)
+                   {
+                        Console.WriteLine(i); break;
+                   }
+                }
+
+            }
             else if (task == 9)
             {
                 /// <summary>

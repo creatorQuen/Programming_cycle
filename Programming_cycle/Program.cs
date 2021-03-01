@@ -103,6 +103,59 @@ namespace Programming_cycle
                 }
 
             }
+            else if (task == 5)
+            {
+                Console.WriteLine("Пользователь вводит 2 числа (A и B). Вывести сумму всех чисел " +
+                    "из диапазона от A до B, которые делятся без остатка на 7. " +
+                    "(Учтите, что при вводе B может оказаться меньше A)");
+
+                int A5, B5;
+                int sum5 = 0;
+                Console.Write("Введите число A: ");
+                A5 = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Введите число B: ");
+                B5 = Convert.ToInt32(Console.ReadLine());
+
+                if (A5 < B5)
+                {
+                    for (int i = A5; i <= B5; i++)
+                    {
+                        if( i % 7 == 0 )
+                        {
+                            sum5 += i;
+                        }
+                        
+                    }
+                    Console.WriteLine(sum5);
+
+                }
+                else if (B5 < A5)
+                {
+                    for (int i = B5; i <= A5; i++)
+                    {
+                        if (i % 7 == 0)
+                        {
+                            sum5 += i;
+                        }
+                    }
+                    Console.WriteLine(sum5);
+
+                }
+                else if (A5 == B5)
+                {
+                    if(A5 % 7 == 0)
+                    {
+                        Console.WriteLine(A5);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Числа одинаковые и не делятся на 7");
+                    }
+                }
+
+
+
+            }
             else if (task == 9)
             {
                 /// <summary>

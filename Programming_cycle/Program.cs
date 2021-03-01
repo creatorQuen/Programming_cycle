@@ -47,6 +47,35 @@ namespace Programming_cycle
             }
             else if (task == 2)
             {
+                /// <summary>
+                /// Пользователь вводит 1 число (A). Вывести все числа от 1 до 1000, которые делятся на A.
+                /// </summary>
+
+                int A1;
+                Console.Write("Введите число A: ");
+                A1 = Convert.ToInt32(Console.ReadLine());
+
+                if (A1 > 0 && A1 <= 1000)
+                {
+                    for (int i = A1; i <= 1000; i += A1)
+                    {
+                        Console.WriteLine(i);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Число больше 1000");
+                }
+
+
+            }
+            else if (task == 3)
+            {
+                /// <summary>
+                /// Пользователь вводит 1 число (A). Найдите количество положительных целых чисел, 
+                /// квадрат которых меньше A.
+                /// </summary>
+
 
             }
             else if (task == 9)

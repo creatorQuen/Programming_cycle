@@ -51,13 +51,13 @@ namespace Programming_cycle
                 /// Пользователь вводит 1 число (A). Вывести все числа от 1 до 1000, которые делятся на A.
                 /// </summary>
 
-                int A1;
+                int A2;
                 Console.Write("Введите число A: ");
-                A1 = Convert.ToInt32(Console.ReadLine());
+                A2 = Convert.ToInt32(Console.ReadLine());
 
-                if (A1 > 0 && A1 <= 1000)
+                if (A2 > 0 && A2 <= 1000)
                 {
-                    for (int i = A1; i <= 1000; i += A1)
+                    for (int i = A2; i <= 1000; i += A2)
                     {
                         Console.WriteLine(i);
                     }
@@ -66,8 +66,6 @@ namespace Programming_cycle
                 {
                     Console.WriteLine("Число больше 1000");
                 }
-
-
             }
             else if (task == 3)
             {
@@ -76,6 +74,14 @@ namespace Programming_cycle
                 /// квадрат которых меньше A.
                 /// </summary>
 
+                int A3;
+                Console.Write("Введите число A: ");
+                A3 = Convert.ToInt32(Console.ReadLine());
+
+                for( int i = 1; i*i < A3; i++)
+                {
+                    Console.WriteLine(i);
+                }
 
             }
             else if (task == 9)

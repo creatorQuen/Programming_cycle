@@ -152,9 +152,29 @@ namespace Programming_cycle
                         Console.WriteLine("Числа одинаковые и не делятся на 7");
                     }
                 }
+            }
+            else if (task == 6)
+            {
+                Console.WriteLine("Пользователь вводит 1 число (N). Выведите N-ое число ряда фибоначчи. " +
+                    "В ряду фибоначчи каждое следующее число является суммой двух предыдущих. " +
+                    "Первое и второе считаются равными 1.");
 
+                int A6;
+                Console.Write("Введите число A: ");
+                A6 = Convert.ToInt32(Console.ReadLine());
+                int fibon1 = 1;
+                int fibon2 = 1;
+                int i = 2;
+                
+                while (i < A6)
+                {
+                    var sumF = fibon1 + fibon2;
+                    fibon1 = fibon2;
+                    fibon2 = sumF;
+                    i = i + 1;
+                }
 
-
+                Console.WriteLine(fibon2);
             }
             else if (task == 9)
             {
